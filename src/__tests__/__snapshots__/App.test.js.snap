@@ -2,25 +2,34 @@
 
 exports[`App HTML Structure should render properly 1`] = `
 <DocumentFragment>
-  <div>
-    <header
-      class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary mui-fixed MuiPaper-elevation4"
+  <header
+    class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary mui-fixed MuiPaper-elevation4"
+  >
+    <div
+      class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
     >
-      <div
-        class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+      <h6
+        class="MuiTypography-root makeStyles-logo-1 MuiTypography-h6"
       >
-        <h6
-          class="MuiTypography-root makeStyles-logo-1 MuiTypography-h6"
+        <a
+          class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-logoLink-2 MuiTypography-colorPrimary"
+          href="/"
         >
-          <a
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-logoLink-2 MuiTypography-colorPrimary"
-            href="/"
-          >
-            Assisted HIP
-          </a>
-        </h6>
-      </div>
-    </header>
+          Assisted HIP
+        </a>
+      </h6>
+    </div>
+  </header>
+  <div
+    class="MuiContainer-root MuiContainer-maxWidthLg"
+    style="margin-top: 90px;"
+  >
+    <h6
+      class="MuiTypography-root MuiTypography-h6"
+      style="background-color: cyan;"
+    >
+      Home Page
+    </h6>
   </div>
 </DocumentFragment>
 `;
