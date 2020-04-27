@@ -6,7 +6,7 @@ const useStyles = makeStyles(() => ({
   },
   logoLink: {
     color: '#fff',
-  }
+  },
 }));
 
 export default useStyles;
