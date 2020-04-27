@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header HTML Structure should render properly 1`] = `
+<DocumentFragment>
+  <header
+    class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary mui-fixed MuiPaper-elevation4"
+  >
+    <div
+      class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+    >
+      <h6
+        class="MuiTypography-root makeStyles-logo-1 MuiTypography-h6"
+      >
+        <a
+          class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-logoLink-2 MuiTypography-colorPrimary"
+          href="/"
+        >
+          Assisted HIP
+        </a>
+      </h6>
+    </div>
+  </header>
+</DocumentFragment>
+`;
