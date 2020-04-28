@@ -5,10 +5,10 @@
 import '@testing-library/jest-dom/extend-expect';
 
 const localStorageMock = {
-  getItem: jest.fn(),
-  setItem: jest.fn(),
-  removeItem: jest.fn(),
-  clear: jest.fn(),
+  getItem: () => null,
+  setItem: () => null,
+  removeItem: () => null,
+  clear: () => null,
 };
 
 Object.defineProperty(window, 'localStorage', {

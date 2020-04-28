@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Private Route HTML Structure should render Redirect component if NOT authenticated 1`] = `
+<DocumentFragment>
+  Login Page
+</DocumentFragment>
+`;
+
+exports[`Private Route HTML Structure should render passed component if authenticated 1`] = `
+<DocumentFragment>
+  Home Page
+</DocumentFragment>
+`;

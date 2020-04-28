@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import StateProvider from './store';
+import PrivateRoute from './components/PrivateRoute';
 
 function App() {
   const initialState = {
@@ -17,7 +18,7 @@ function App() {
       <Header />
       <Container maxWidth="lg" style={{ marginTop: 90 }}>
         <Router>
-          <Route path="/" exact component={Home} />
+          <PrivateRoute path="/" exact component={Home} />
           <Route path="/login" component={Login} />
         </Router>
       </Container>

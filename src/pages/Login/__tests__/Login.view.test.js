@@ -14,8 +14,10 @@ describe('Login', () => {
     setShowPassword: jest.fn(),
   };
 
+  const setItemSpy = jest.spyOn(localStorage, 'setItem');
+
   beforeEach(() => {
-    localStorage.setItem.mockReset();
+    setItemSpy.mockReset();
   });
 
   describe('HTML Structure', () => {
