@@ -8,16 +8,12 @@ exports[`Header HTML Structure should render properly 1`] = `
     <div
       class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
     >
-      <h6
-        class="MuiTypography-root makeStyles-logo-1 MuiTypography-h6"
+      <a
+        class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-logoLink-1 MuiTypography-body1 MuiTypography-colorPrimary"
+        href="/"
       >
-        <a
-          class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-logoLink-2 MuiTypography-colorPrimary"
-          href="/"
-        >
-          Demo
-        </a>
-      </h6>
+        Demo
+      </a>
     </div>
   </header>
 </DocumentFragment>

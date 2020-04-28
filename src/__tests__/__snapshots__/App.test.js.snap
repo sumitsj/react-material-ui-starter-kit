@@ -8,28 +8,23 @@ exports[`App HTML Structure should render properly 1`] = `
     <div
       class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
     >
-      <h6
-        class="MuiTypography-root makeStyles-logo-1 MuiTypography-h6"
+      <a
+        class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-logoLink-1 MuiTypography-body1 MuiTypography-colorPrimary"
+        href="/"
       >
-        <a
-          class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-logoLink-2 MuiTypography-colorPrimary"
-          href="/"
-        >
-          Assistant Portal
-        </a>
-      </h6>
+        Assistant Portal
+      </a>
     </div>
   </header>
   <div
     class="MuiContainer-root MuiContainer-maxWidthLg"
     style="margin-top: 90px;"
   >
-    <h6
-      class="MuiTypography-root MuiTypography-h6"
-      style="background-color: cyan;"
+    <h2
+      class="MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom"
     >
       Home Page
-    </h6>
+    </h2>
   </div>
 </DocumentFragment>
 `;
