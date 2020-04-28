@@ -15,7 +15,7 @@ exports[`Header HTML Structure should render properly 1`] = `
           class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-logoLink-2 MuiTypography-colorPrimary"
           href="/"
         >
-          Assisted HIP
+          Demo
         </a>
       </h6>
     </div>

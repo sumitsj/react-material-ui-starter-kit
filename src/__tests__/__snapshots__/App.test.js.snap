@@ -15,7 +15,7 @@ exports[`App HTML Structure should render properly 1`] = `
           class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-logoLink-2 MuiTypography-colorPrimary"
           href="/"
         >
-          Assisted HIP
+          Assistant Portal
         </a>
       </h6>
     </div>
