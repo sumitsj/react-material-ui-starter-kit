@@ -4,15 +4,10 @@ import Container from '@material-ui/core/Container';
 import Header from './components/Header';
 import Home from './pages/Home';
 import Login from './pages/Login';
-import StateProvider from './store';
+import StateProvider, { initialState, reducer } from './store';
 import PrivateRoute from './components/PrivateRoute';
 
 function App() {
-  const initialState = {
-    name: 'Assistant Portal',
-  };
-  const reducer = (state, _action) => state;
-
   return (
     <StateProvider initialState={initialState} reducer={reducer}>
       <Header />

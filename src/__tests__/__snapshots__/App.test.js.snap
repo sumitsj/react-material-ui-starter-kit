@@ -12,7 +12,7 @@ exports[`App HTML Structure should render properly 1`] = `
         class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-logoLink-1 MuiTypography-body1 MuiTypography-colorPrimary"
         href="/"
       >
-        Assistant Portal
+        React-Material UI Starter Kit
       </a>
     </div>
   </header>
