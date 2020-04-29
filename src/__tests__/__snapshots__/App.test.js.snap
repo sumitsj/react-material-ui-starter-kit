@@ -9,7 +9,7 @@ exports[`App HTML Structure should render properly 1`] = `
       class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
     >
       <a
-        class="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-logoLink-1 MuiTypography-body1 MuiTypography-colorPrimary"
+        class="MuiTypography-root MuiLink-root MuiLink-underlineNone makeStyles-logoLink-1 MuiTypography-body1 MuiTypography-colorPrimary"
         href="/"
       >
         React-Material UI Starter Kit

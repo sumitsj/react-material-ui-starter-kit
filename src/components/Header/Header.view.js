@@ -11,7 +11,7 @@ const Header = ({ name }) => {
   return (
     <AppBar>
       <Toolbar>
-        <Link href="/" variant="body1" className={classes.logoLink}>
+        <Link href="/" variant="body1" className={classes.logoLink} underline="none">
           {name}
         </Link>
       </Toolbar>
