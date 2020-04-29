@@ -1,5 +1,4 @@
-import React from 'react';
-import * as PropTypes from 'prop-types';
+import React, { useState } from 'react';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Avatar from '@material-ui/core/Avatar';
@@ -14,15 +13,11 @@ import { Visibility, VisibilityOff } from '@material-ui/icons';
 import IconButton from '@material-ui/core/IconButton';
 import useStyles from './Login.style';
 
-const Login = ({
-  username,
-  password,
-  showPassword,
-  setUsername,
-  setPassword,
-  setShowPassword,
-}) => {
+const Login = () => {
   const classes = useStyles();
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleSubmitClick = (event) => {
     localStorage.setItem('auth-token', 'true');
@@ -97,15 +92,6 @@ const Login = ({
       </form>
     </Container>
   );
-};
-
-Login.propTypes = {
-  username: PropTypes.string.isRequired,
-  password: PropTypes.string.isRequired,
-  showPassword: PropTypes.bool.isRequired,
-  setUsername: PropTypes.func.isRequired,
-  setPassword: PropTypes.func.isRequired,
-  setShowPassword: PropTypes.func.isRequired,
 };
 
 export default Login;

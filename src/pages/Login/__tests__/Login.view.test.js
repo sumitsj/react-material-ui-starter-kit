@@ -3,56 +3,59 @@ import { fireEvent, render } from '@testing-library/react';
 import Login from '../Login.view';
 
 jest.mock('@material-ui/core/Link', () => jest.fn(() => <forget-password />));
+jest.mock('@material-ui/icons/Visibility', () => jest.fn(() => <div title="visible" />));
+jest.mock('@material-ui/icons/VisibilityOff', () => jest.fn(() => <div title="visible-off" />));
+
+function setUsernameAndPassword(container, username, password) {
+  fireEvent.change(container.querySelector('[name="username"]'), { target: { value: username } });
+  fireEvent.change(container.querySelector('[name="password"]'), { target: { value: password } });
+}
 
 describe('Login', () => {
-  const props = {
-    username: '8888888888',
-    password: 'Abcd@123',
-    showPassword: true,
-    setUsername: jest.fn(),
-    setPassword: jest.fn(),
-    setShowPassword: jest.fn(),
-  };
-
-  const setItemSpy = jest.spyOn(localStorage, 'setItem');
-
-  beforeEach(() => {
-    setItemSpy.mockReset();
-  });
-
   describe('HTML Structure', () => {
     it('should render properly when showPassword is true', () => {
-      const { asFragment } = render(<Login {...props} />);
+      const { asFragment, container, getByLabelText } = render(<Login />);
+      setUsernameAndPassword(container, '8888888888', 'Abcd@123');
+      fireEvent.click(getByLabelText('toggle password visibility'));
+
       expect(asFragment()).toMatchSnapshot();
     });
 
     it('should render properly when showPassword is false', () => {
-      const { asFragment } = render(<Login {...props} showPassword={false} />);
+      const { asFragment, container } = render(<Login />);
+      setUsernameAndPassword(container, '8888888888', 'Abcd@123');
+
       expect(asFragment()).toMatchSnapshot();
     });
   });
 
   describe('Events', () => {
-    it('should call setUsername on username change', () => {
-      const { container } = render(<Login {...props} />);
-      fireEvent.change(container.querySelector('[name="username"]'), { target: { value: '1234567890' } });
-      expect(props.setUsername).toHaveBeenCalledWith('1234567890');
+    it('should update username state on username change', () => {
+      const { container } = render(<Login />);
+      const userName = container.querySelector('[name="username"]');
+
+      fireEvent.change(userName, { target: { value: '1234567890' } });
+      expect(userName.value).toEqual('1234567890');
     });
 
     it('should call setPassword on password change', () => {
-      const { container } = render(<Login {...props} />);
-      fireEvent.change(container.querySelector('[name="password"]'), { target: { value: 'abcd@1234' } });
-      expect(props.setPassword).toHaveBeenCalledWith('abcd@1234');
+      const { container } = render(<Login />);
+      const password = container.querySelector('[name="password"]');
+
+      fireEvent.change(password, { target: { value: 'abcd@1234' } });
+      expect(password.value).toEqual('abcd@1234');
     });
 
-    it('should call setShowPassword on click of password visibility toggle', () => {
-      const { getByLabelText } = render(<Login {...props} />);
+    it('should show Visibility icon on click of password visibility toggle', () => {
+      const { getByLabelText, getByTitle } = render(<Login />);
       fireEvent.click(getByLabelText('toggle password visibility'));
-      expect(props.setShowPassword).toHaveBeenCalledWith(false);
+      expect(getByTitle('visible')).toBeInTheDocument();
     });
 
     it('should call setItem on sign in click', () => {
-      const { getByRole } = render(<Login {...props} />);
+      const { getByRole, container } = render(<Login />);
+      setUsernameAndPassword(container, '1234567890', 'abcd@1234');
+
       fireEvent.click(getByRole('button', { name: 'Sign In' }));
       expect(localStorage.setItem).toHaveBeenCalledWith('auth-token', 'true');
     });

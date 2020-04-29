@@ -3,10 +3,12 @@ import { render } from '@testing-library/react';
 import App from '../App';
 
 describe('App', () => {
-  const getItemSpy = jest.spyOn(localStorage, 'getItem').mockImplementation(() => 'true');
+  beforeAll(() => {
+    localStorage.getItem.mockImplementation(() => 'true');
+  });
 
   afterEach(() => {
-    getItemSpy.mockRestore();
+    localStorage.getItem.mockRestore();
   });
 
   describe('HTML Structure', () => {
