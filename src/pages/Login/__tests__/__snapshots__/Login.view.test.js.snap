@@ -2,30 +2,14 @@
 
 exports[`Login HTML Structure should render properly when showPassword is false 1`] = `
 <DocumentFragment>
+  <div
+    class="MuiBox-root MuiBox-root-137 makeStyles-header-130"
+  />
   <main
-    class="MuiContainer-root makeStyles-paper-291 MuiContainer-maxWidthXs"
+    class="MuiContainer-root makeStyles-paper-131 MuiContainer-maxWidthXs"
   >
-    <div
-      class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-292 MuiAvatar-colorDefault"
-    >
-      <svg
-        aria-hidden="true"
-        class="MuiSvgIcon-root MuiAvatar-fallback"
-        focusable="false"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
-        />
-      </svg>
-    </div>
-    <h1
-      class="MuiTypography-root MuiTypography-h5"
-    >
-      Sign in
-    </h1>
     <form
-      class="makeStyles-form-293"
+      class="makeStyles-form-133"
       novalidate=""
     >
       <div
@@ -35,7 +19,7 @@ exports[`Login HTML Structure should render properly when showPassword is false 
           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-filled Mui-focused Mui-focused Mui-required Mui-required"
           data-shrink="true"
         >
-          Mobile Number
+          Username
           <span
             aria-hidden="true"
             class="MuiFormLabel-asterisk MuiInputLabel-asterisk"
@@ -57,13 +41,13 @@ exports[`Login HTML Structure should render properly when showPassword is false 
           />
           <fieldset
             aria-hidden="true"
-            class="PrivateNotchedOutline-root-407 MuiOutlinedInput-notchedOutline"
+            class="PrivateNotchedOutline-root-204 MuiOutlinedInput-notchedOutline"
           >
             <legend
-              class="PrivateNotchedOutline-legendLabelled-409 PrivateNotchedOutline-legendNotched-410"
+              class="PrivateNotchedOutline-legendLabelled-206 PrivateNotchedOutline-legendNotched-207"
             >
               <span>
-                Mobile Number *
+                Username *
               </span>
             </legend>
           </fieldset>
@@ -115,10 +99,10 @@ exports[`Login HTML Structure should render properly when showPassword is false 
           </button>
           <fieldset
             aria-hidden="true"
-            class="PrivateNotchedOutline-root-407 MuiOutlinedInput-notchedOutline"
+            class="PrivateNotchedOutline-root-204 MuiOutlinedInput-notchedOutline"
           >
             <legend
-              class="PrivateNotchedOutline-legendLabelled-409 PrivateNotchedOutline-legendNotched-410"
+              class="PrivateNotchedOutline-legendLabelled-206 PrivateNotchedOutline-legendNotched-207"
             >
               <span>
                 Password *
@@ -127,65 +111,21 @@ exports[`Login HTML Structure should render properly when showPassword is false 
           </fieldset>
         </div>
       </div>
-      <label
-        class="MuiFormControlLabel-root Mui-disabled"
-      >
-        <span
-          aria-disabled="true"
-          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-435 MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-disabled-437 Mui-disabled MuiIconButton-colorPrimary Mui-disabled Mui-disabled"
-          tabindex="-1"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <input
-              class="PrivateSwitchBase-input-438"
-              data-indeterminate="false"
-              disabled=""
-              type="checkbox"
-              value="remember"
-            />
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-              />
-            </svg>
-          </span>
-        </span>
-        <span
-          class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
-        >
-          Remember me
-        </span>
-      </label>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-submit-294 MuiButton-containedPrimary MuiButton-fullWidth"
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-submit-134 MuiButton-containedPrimary MuiButton-fullWidth"
         tabindex="0"
         type="button"
       >
         <span
           class="MuiButton-label"
         >
-          Sign In
+          LOGIN
         </span>
         <span
           class="MuiTouchRipple-root"
         />
       </button>
-      <div
-        class="MuiGrid-root MuiGrid-container"
-      >
-        <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
-        >
-          <forget-password />
-        </div>
-      </div>
+      <forget-password />
     </form>
   </main>
 </DocumentFragment>
@@ -193,30 +133,14 @@ exports[`Login HTML Structure should render properly when showPassword is false 
 
 exports[`Login HTML Structure should render properly when showPassword is true 1`] = `
 <DocumentFragment>
+  <div
+    class="MuiBox-root MuiBox-root-8 makeStyles-header-1"
+  />
   <main
-    class="MuiContainer-root makeStyles-paper-1 MuiContainer-maxWidthXs"
+    class="MuiContainer-root makeStyles-paper-2 MuiContainer-maxWidthXs"
   >
-    <div
-      class="MuiAvatar-root MuiAvatar-circle makeStyles-avatar-2 MuiAvatar-colorDefault"
-    >
-      <svg
-        aria-hidden="true"
-        class="MuiSvgIcon-root MuiAvatar-fallback"
-        focusable="false"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
-        />
-      </svg>
-    </div>
-    <h1
-      class="MuiTypography-root MuiTypography-h5"
-    >
-      Sign in
-    </h1>
     <form
-      class="makeStyles-form-3"
+      class="makeStyles-form-4"
       novalidate=""
     >
       <div
@@ -226,7 +150,7 @@ exports[`Login HTML Structure should render properly when showPassword is true 1
           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-filled Mui-focused Mui-focused Mui-required Mui-required"
           data-shrink="true"
         >
-          Mobile Number
+          Username
           <span
             aria-hidden="true"
             class="MuiFormLabel-asterisk MuiInputLabel-asterisk"
@@ -248,13 +172,13 @@ exports[`Login HTML Structure should render properly when showPassword is true 1
           />
           <fieldset
             aria-hidden="true"
-            class="PrivateNotchedOutline-root-117 MuiOutlinedInput-notchedOutline"
+            class="PrivateNotchedOutline-root-75 MuiOutlinedInput-notchedOutline"
           >
             <legend
-              class="PrivateNotchedOutline-legendLabelled-119 PrivateNotchedOutline-legendNotched-120"
+              class="PrivateNotchedOutline-legendLabelled-77 PrivateNotchedOutline-legendNotched-78"
             >
               <span>
-                Mobile Number *
+                Username *
               </span>
             </legend>
           </fieldset>
@@ -306,10 +230,10 @@ exports[`Login HTML Structure should render properly when showPassword is true 1
           </button>
           <fieldset
             aria-hidden="true"
-            class="PrivateNotchedOutline-root-117 MuiOutlinedInput-notchedOutline"
+            class="PrivateNotchedOutline-root-75 MuiOutlinedInput-notchedOutline"
           >
             <legend
-              class="PrivateNotchedOutline-legendLabelled-119 PrivateNotchedOutline-legendNotched-120"
+              class="PrivateNotchedOutline-legendLabelled-77 PrivateNotchedOutline-legendNotched-78"
             >
               <span>
                 Password *
@@ -318,65 +242,21 @@ exports[`Login HTML Structure should render properly when showPassword is true 1
           </fieldset>
         </div>
       </div>
-      <label
-        class="MuiFormControlLabel-root Mui-disabled"
-      >
-        <span
-          aria-disabled="true"
-          class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-145 MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-disabled-147 Mui-disabled MuiIconButton-colorPrimary Mui-disabled Mui-disabled"
-          tabindex="-1"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <input
-              class="PrivateSwitchBase-input-148"
-              data-indeterminate="false"
-              disabled=""
-              type="checkbox"
-              value="remember"
-            />
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-              />
-            </svg>
-          </span>
-        </span>
-        <span
-          class="MuiTypography-root MuiFormControlLabel-label Mui-disabled MuiTypography-body1"
-        >
-          Remember me
-        </span>
-      </label>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-submit-4 MuiButton-containedPrimary MuiButton-fullWidth"
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-submit-5 MuiButton-containedPrimary MuiButton-fullWidth"
         tabindex="0"
         type="button"
       >
         <span
           class="MuiButton-label"
         >
-          Sign In
+          LOGIN
         </span>
         <span
           class="MuiTouchRipple-root"
         />
       </button>
-      <div
-        class="MuiGrid-root MuiGrid-container"
-      >
-        <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true"
-        >
-          <forget-password />
-        </div>
-      </div>
+      <forget-password />
     </form>
   </main>
 </DocumentFragment>

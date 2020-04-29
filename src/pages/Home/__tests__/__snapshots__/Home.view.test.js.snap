@@ -2,6 +2,20 @@
 
 exports[`Home HTML Structure should render properly 1`] = `
 <DocumentFragment>
+  <header
+    class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary mui-fixed MuiPaper-elevation4"
+  >
+    <div
+      class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+    >
+      <a
+        class="MuiTypography-root MuiLink-root MuiLink-underlineNone makeStyles-logoLink-1 MuiTypography-body1 MuiTypography-colorPrimary"
+        href="/"
+      >
+        Demo
+      </a>
+    </div>
+  </header>
   <h2
     class="MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom"
   >
