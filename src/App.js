@@ -10,8 +10,14 @@ import PrivateRoute from './components/PrivateRoute';
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#4489ff',
+      main: '#448AFF',
     },
+    secondary: {
+      main: '#FFF',
+    },
+  },
+  typography: {
+    fontFamily: ['Poppins', 'Helvetica', 'Arial', 'sans-serif'],
   },
 });
 
@@ -19,12 +25,10 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <StateProvider initialState={initialState} reducer={reducer}>
-        <Container maxWidth="lg" style={{ marginTop: 90 }}>
-          <Router>
-            <PrivateRoute path="/" exact component={Home} />
-            <Route path="/login" component={Login} />
-          </Router>
-        </Container>
+        <Router>
+          <PrivateRoute path="/" exact component={Home} />
+          <Route path="/login" component={Login} />
+        </Router>
       </StateProvider>
     </ThemeProvider>
   );

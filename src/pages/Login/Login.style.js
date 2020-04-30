@@ -2,20 +2,29 @@ import makeStyles from '@material-ui/core/styles/makeStyles';
 
 const useStyles = makeStyles((theme) => ({
   header: {
-    minHeight: '35vh',
-    width: '100vw',
+    padding: theme.spacing(8),
+    [theme.breakpoints.down('sm')]: {
+      padding: theme.spacing(4),
+    },
     backgroundColor: theme.palette.primary.main,
-    position: 'fixed',
-    top: 0,
-    left: 0,
+  },
+  divider: {
+    marginLeft: theme.spacing(4),
+    marginRight: theme.spacing(4),
+    [theme.breakpoints.down('sm')]: {
+      marginLeft: theme.spacing(2),
+      marginRight: theme.spacing(2),
+    },
+    backgroundColor: theme.palette.secondary.main,
+  },
+  title: {
+    maxWidth: 510,
   },
   paper: {
-    marginTop: '35vh',
-    height: '65vh',
     display: 'flex',
-    paddingTop: '8vh',
     flexDirection: 'column',
     alignItems: 'center',
+    paddingTop: theme.spacing(4),
   },
   avatar: {
     margin: theme.spacing(1),

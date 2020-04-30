@@ -2,24 +2,29 @@
 
 exports[`Home HTML Structure should render properly 1`] = `
 <DocumentFragment>
-  <header
-    class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary mui-fixed MuiPaper-elevation4"
+  <div
+    class="MuiContainer-root MuiContainer-maxWidthLg"
+    style="margin-top: 90px;"
   >
-    <div
-      class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+    <header
+      class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary mui-fixed MuiPaper-elevation4"
     >
-      <a
-        class="MuiTypography-root MuiLink-root MuiLink-underlineNone makeStyles-logoLink-1 MuiTypography-body1 MuiTypography-colorPrimary"
-        href="/"
+      <div
+        class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
       >
-        Demo
-      </a>
-    </div>
-  </header>
-  <h2
-    class="MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom"
-  >
-    Home Page
-  </h2>
+        <a
+          class="MuiTypography-root MuiLink-root MuiLink-underlineNone makeStyles-logoLink-9 MuiTypography-body1 MuiTypography-colorPrimary"
+          href="/"
+        >
+          Demo
+        </a>
+      </div>
+    </header>
+    <h2
+      class="MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom"
+    >
+      Home Page
+    </h2>
+  </div>
 </DocumentFragment>
 `;

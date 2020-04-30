@@ -3,13 +3,22 @@
 exports[`Login HTML Structure should render properly when showPassword is false 1`] = `
 <DocumentFragment>
   <div
-    class="MuiBox-root MuiBox-root-137 makeStyles-header-130"
-  />
+    class="MuiGrid-root makeStyles-header-233 MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-item"
+    >
+      <img
+        height="64"
+        src="logo.png"
+      />
+    </div>
+  </div>
   <main
-    class="MuiContainer-root makeStyles-paper-131 MuiContainer-maxWidthXs"
+    class="MuiContainer-root makeStyles-paper-236 MuiContainer-maxWidthXs"
   >
     <form
-      class="makeStyles-form-133"
+      class="makeStyles-form-238"
       novalidate=""
     >
       <div
@@ -41,10 +50,10 @@ exports[`Login HTML Structure should render properly when showPassword is false 
           />
           <fieldset
             aria-hidden="true"
-            class="PrivateNotchedOutline-root-204 MuiOutlinedInput-notchedOutline"
+            class="PrivateNotchedOutline-root-410 MuiOutlinedInput-notchedOutline"
           >
             <legend
-              class="PrivateNotchedOutline-legendLabelled-206 PrivateNotchedOutline-legendNotched-207"
+              class="PrivateNotchedOutline-legendLabelled-412 PrivateNotchedOutline-legendNotched-413"
             >
               <span>
                 Username *
@@ -99,10 +108,10 @@ exports[`Login HTML Structure should render properly when showPassword is false 
           </button>
           <fieldset
             aria-hidden="true"
-            class="PrivateNotchedOutline-root-204 MuiOutlinedInput-notchedOutline"
+            class="PrivateNotchedOutline-root-410 MuiOutlinedInput-notchedOutline"
           >
             <legend
-              class="PrivateNotchedOutline-legendLabelled-206 PrivateNotchedOutline-legendNotched-207"
+              class="PrivateNotchedOutline-legendLabelled-412 PrivateNotchedOutline-legendNotched-413"
             >
               <span>
                 Password *
@@ -112,7 +121,7 @@ exports[`Login HTML Structure should render properly when showPassword is false 
         </div>
       </div>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-submit-134 MuiButton-containedPrimary MuiButton-fullWidth"
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-submit-239 MuiButton-containedPrimary MuiButton-fullWidth"
         tabindex="0"
         type="button"
       >
@@ -134,13 +143,22 @@ exports[`Login HTML Structure should render properly when showPassword is false 
 exports[`Login HTML Structure should render properly when showPassword is true 1`] = `
 <DocumentFragment>
   <div
-    class="MuiBox-root MuiBox-root-8 makeStyles-header-1"
-  />
+    class="MuiGrid-root makeStyles-header-1 MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-item"
+    >
+      <img
+        height="64"
+        src="logo.png"
+      />
+    </div>
+  </div>
   <main
-    class="MuiContainer-root makeStyles-paper-2 MuiContainer-maxWidthXs"
+    class="MuiContainer-root makeStyles-paper-4 MuiContainer-maxWidthXs"
   >
     <form
-      class="makeStyles-form-4"
+      class="makeStyles-form-6"
       novalidate=""
     >
       <div
@@ -172,10 +190,10 @@ exports[`Login HTML Structure should render properly when showPassword is true 1
           />
           <fieldset
             aria-hidden="true"
-            class="PrivateNotchedOutline-root-75 MuiOutlinedInput-notchedOutline"
+            class="PrivateNotchedOutline-root-178 MuiOutlinedInput-notchedOutline"
           >
             <legend
-              class="PrivateNotchedOutline-legendLabelled-77 PrivateNotchedOutline-legendNotched-78"
+              class="PrivateNotchedOutline-legendLabelled-180 PrivateNotchedOutline-legendNotched-181"
             >
               <span>
                 Username *
@@ -230,10 +248,10 @@ exports[`Login HTML Structure should render properly when showPassword is true 1
           </button>
           <fieldset
             aria-hidden="true"
-            class="PrivateNotchedOutline-root-75 MuiOutlinedInput-notchedOutline"
+            class="PrivateNotchedOutline-root-178 MuiOutlinedInput-notchedOutline"
           >
             <legend
-              class="PrivateNotchedOutline-legendLabelled-77 PrivateNotchedOutline-legendNotched-78"
+              class="PrivateNotchedOutline-legendLabelled-180 PrivateNotchedOutline-legendNotched-181"
             >
               <span>
                 Password *
@@ -243,7 +261,7 @@ exports[`Login HTML Structure should render properly when showPassword is true 1
         </div>
       </div>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-submit-5 MuiButton-containedPrimary MuiButton-fullWidth"
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-submit-7 MuiButton-containedPrimary MuiButton-fullWidth"
         tabindex="0"
         type="button"
       >
