@@ -9,6 +9,7 @@ exports[`Login HTML Structure should render properly when showPassword is false 
       class="MuiGrid-root MuiGrid-item"
     >
       <img
+        alt="LOGO"
         height="64"
         src="logo.png"
       />
@@ -149,6 +150,7 @@ exports[`Login HTML Structure should render properly when showPassword is true 1
       class="MuiGrid-root MuiGrid-item"
     >
       <img
+        alt="LOGO"
         height="64"
         src="logo.png"
       />

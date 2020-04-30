@@ -17,10 +17,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --watchAll=false",
+    "test": "react-scripts test --watchAll=false --coverage",
     "test:watch": "react-scripts test",
     "test:update-snapshot": "react-scripts test --watchAll=false --updateSnapshot",
-    "test:coverage": "react-scripts test --watchAll=false --coverage",
     "eject": "react-scripts eject",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix"
@@ -40,6 +39,20 @@
   "devDependencies": {
     "eslint-config-airbnb": "^18.1.0",
     "husky": "^4.2.5"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 100,
+        "statements": 100,
+        "lines": 100
+      }
+    },
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/**/*.style.js"
+    ]
   },
   "husky": {
     "hooks": {

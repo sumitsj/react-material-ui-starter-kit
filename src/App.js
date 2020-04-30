@@ -1,6 +1,5 @@
 import React from 'react';
 import { HashRouter as Router, Route } from 'react-router-dom';
-import Container from '@material-ui/core/Container';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import Home from './pages/Home';
 import Login from './pages/Login';
