@@ -4,7 +4,9 @@ import Header from './Header.view';
 
 const HeaderContainer = () => {
   const [{ name }] = useStateValue();
-  return <Header name={name} />;
+  const isAuthenticated = !!localStorage.getItem('auth-token');
+
+  return <Header name={name} isAuthenticated={isAuthenticated} />;
 };
 
 export default HeaderContainer;

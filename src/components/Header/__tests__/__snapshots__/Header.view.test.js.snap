@@ -6,10 +6,10 @@ exports[`Header HTML Structure should render properly 1`] = `
     class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary mui-fixed MuiPaper-elevation4"
   >
     <div
-      class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+      class="MuiToolbar-root MuiToolbar-regular makeStyles-toolbar-1 MuiToolbar-gutters"
     >
       <a
-        class="MuiTypography-root MuiLink-root MuiLink-underlineNone makeStyles-logoLink-1 MuiTypography-body1 MuiTypography-colorPrimary"
+        class="MuiTypography-root MuiLink-root MuiLink-underlineNone makeStyles-logoLink-2 MuiTypography-body1 MuiTypography-colorPrimary"
         href="/"
       >
         <img
@@ -19,6 +19,33 @@ exports[`Header HTML Structure should render properly 1`] = `
           title="Demo"
         />
       </a>
+    </div>
+  </header>
+</DocumentFragment>
+`;
+
+exports[`Header HTML Structure should render with user menu if authenticated 1`] = `
+<DocumentFragment>
+  <header
+    class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary mui-fixed MuiPaper-elevation4"
+  >
+    <div
+      class="MuiToolbar-root MuiToolbar-regular makeStyles-toolbar-82 MuiToolbar-gutters"
+    >
+      <a
+        class="MuiTypography-root MuiLink-root MuiLink-underlineNone makeStyles-logoLink-83 MuiTypography-body1 MuiTypography-colorPrimary"
+        href="/"
+      >
+        <img
+          alt="Demo"
+          height="32"
+          src="logo.png"
+          title="Demo"
+        />
+      </a>
+      <div
+        title="header menu"
+      />
     </div>
   </header>
 </DocumentFragment>

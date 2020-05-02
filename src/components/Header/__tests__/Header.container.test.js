@@ -14,6 +14,6 @@ describe('Header Container', () => {
         <HeaderContainer />
       </StateContext.Provider>,
     );
-    expect(Header).toHaveBeenCalledWith(mockState, {});
+    expect(Header).toHaveBeenCalledWith({ ...mockState, isAuthenticated: false }, {});
   });
 });

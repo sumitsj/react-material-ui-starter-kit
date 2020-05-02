@@ -1,11 +1,11 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(() => ({
-  toolbar: {
-    justifyContent: 'space-between',
+  menuButton: {
+    marginRight: '-12px',
   },
-  logoLink: {
-    color: '#fff',
+  menuButtonIcon: {
+    fontSize: '1.625rem',
   },
 }));
 

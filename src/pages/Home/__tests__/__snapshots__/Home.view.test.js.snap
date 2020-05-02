@@ -6,25 +6,7 @@ exports[`Home HTML Structure should render properly 1`] = `
     class="MuiContainer-root MuiContainer-maxWidthLg"
     style="margin-top: 90px;"
   >
-    <header
-      class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary mui-fixed MuiPaper-elevation4"
-    >
-      <div
-        class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
-      >
-        <a
-          class="MuiTypography-root MuiLink-root MuiLink-underlineNone makeStyles-logoLink-9 MuiTypography-body1 MuiTypography-colorPrimary"
-          href="/"
-        >
-          <img
-            alt="Demo"
-            height="32"
-            src="logo.png"
-            title="Demo"
-          />
-        </a>
-      </div>
-    </header>
+    <header />
     <h2
       class="MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom"
     >

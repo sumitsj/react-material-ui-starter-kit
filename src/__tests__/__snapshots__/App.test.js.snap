@@ -3,33 +3,7 @@
 exports[`App HTML Structure should render properly 1`] = `
 <DocumentFragment>
   <div
-    class="MuiContainer-root MuiContainer-maxWidthLg"
-    style="margin-top: 90px;"
-  >
-    <header
-      class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary mui-fixed MuiPaper-elevation4"
-    >
-      <div
-        class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
-      >
-        <a
-          class="MuiTypography-root MuiLink-root MuiLink-underlineNone makeStyles-logoLink-9 MuiTypography-body1 MuiTypography-colorPrimary"
-          href="/"
-        >
-          <img
-            alt="React-Material UI Starter Kit"
-            height="32"
-            src="logo.png"
-            title="React-Material UI Starter Kit"
-          />
-        </a>
-      </div>
-    </header>
-    <h2
-      class="MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom"
-    >
-      Home Page
-    </h2>
-  </div>
+    title="home page"
+  />
 </DocumentFragment>
 `;
