@@ -12,7 +12,12 @@ exports[`Header HTML Structure should render properly 1`] = `
         class="MuiTypography-root MuiLink-root MuiLink-underlineNone makeStyles-logoLink-1 MuiTypography-body1 MuiTypography-colorPrimary"
         href="/"
       >
-        Demo
+        <img
+          alt="Demo"
+          height="32"
+          src="logo.png"
+          title="Demo"
+        />
       </a>
     </div>
   </header>

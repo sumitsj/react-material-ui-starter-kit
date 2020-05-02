@@ -4,6 +4,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Link from '@material-ui/core/Link';
 import * as PropTypes from 'prop-types';
 import useStyles from './Header.style';
+import logo from '../../assets/images/logo.png';
 
 const Header = ({ name }) => {
   const classes = useStyles();
@@ -12,7 +13,7 @@ const Header = ({ name }) => {
     <AppBar>
       <Toolbar>
         <Link href="/" variant="body1" className={classes.logoLink} underline="none">
-          {name}
+          <img src={logo} height="32" alt={name} title={name} />
         </Link>
       </Toolbar>
     </AppBar>

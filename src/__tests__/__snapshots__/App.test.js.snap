@@ -16,7 +16,12 @@ exports[`App HTML Structure should render properly 1`] = `
           class="MuiTypography-root MuiLink-root MuiLink-underlineNone makeStyles-logoLink-9 MuiTypography-body1 MuiTypography-colorPrimary"
           href="/"
         >
-          React-Material UI Starter Kit
+          <img
+            alt="React-Material UI Starter Kit"
+            height="32"
+            src="logo.png"
+            title="React-Material UI Starter Kit"
+          />
         </a>
       </div>
     </header>
