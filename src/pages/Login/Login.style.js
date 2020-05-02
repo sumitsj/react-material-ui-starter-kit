@@ -35,13 +35,18 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(1),
   },
   submit: {
-    padding: theme.spacing(1.5),
-    margin: theme.spacing(3, 0, 2),
+    lineHeight: '1rem',
+    letterSpacing: '1.25px',
+    padding: theme.spacing(2.5, 1.75),
+    margin: theme.spacing(5.25, 0, 4),
   },
   link: {
+    display: 'block',
+    fontWeight: 500,
+    lineHeight: '1rem',
+    letterSpacing: '1.25px',
     textAlign: 'center',
     width: '100%',
-    display: 'block',
   },
 }));
 
