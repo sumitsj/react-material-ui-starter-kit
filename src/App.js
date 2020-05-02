@@ -1,9 +1,10 @@
 import React from 'react';
-import { HashRouter as Router, Route } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Home from './pages/Home';
 import Login from './pages/Login';
+import Error from './pages/Error';
 import StateProvider, { initialState, reducer } from './store';
 import PrivateRoute from './components/PrivateRoute';
 
@@ -34,8 +35,11 @@ function App() {
       <CssBaseline />
       <StateProvider initialState={initialState} reducer={reducer}>
         <Router>
-          <PrivateRoute path="/" exact component={Home} />
-          <Route path="/login" component={Login} />
+          <Switch>
+            <PrivateRoute path="/" exact component={Home} />
+            <Route path="/login" component={Login} />
+            <Route path="*" component={Error} />
+          </Switch>
         </Router>
       </StateProvider>
     </ThemeProvider>

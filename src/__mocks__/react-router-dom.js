@@ -7,6 +7,8 @@ Redirect.propTypes = {
   to: PropTypes.string.isRequired,
 };
 
-export { HashRouter, Route, Link } from 'react-router-dom';
+export {
+  HashRouter, Route, Link, Switch,
+} from 'react-router-dom';
 
 export default {};
