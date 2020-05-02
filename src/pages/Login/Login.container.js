@@ -7,8 +7,7 @@ const LoginContainer = () => {
 
   return (
     <>
-      {isAuthenticated && <Redirect to="/" />}
-      <Login />
+      {isAuthenticated ? <Redirect to="/" /> : <Login />}
     </>
   );
 };

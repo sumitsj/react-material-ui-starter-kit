@@ -2,7 +2,10 @@
 
 exports[`Private Route HTML Structure should render Redirect component if NOT authenticated 1`] = `
 <DocumentFragment>
-  Login Page
+  <div
+    title="redirect"
+    to="/login"
+  />
 </DocumentFragment>
 `;
 
