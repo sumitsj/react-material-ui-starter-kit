@@ -52,12 +52,20 @@ describe('Login', () => {
       expect(getByTitle('visible')).toBeInTheDocument();
     });
 
-    it('should call setItem on Login click', () => {
+    it('should call localStorage.setItem on Login click', () => {
       const { getByRole, container } = render(<Login />);
       setUsernameAndPassword(container, '1234567890', 'abcd@1234');
 
       fireEvent.click(getByRole('button', { name: 'LOGIN' }));
       expect(localStorage.setItem).toHaveBeenCalledWith('auth-token', 'true');
+    });
+
+    it('should call history.push on Login click', () => {
+      const { getByRole, container } = render(<Login />);
+      setUsernameAndPassword(container, '1234567890', 'abcd@1234');
+
+      fireEvent.click(getByRole('button', { name: 'LOGIN' }));
+      expect(window.history.pushState).toHaveBeenCalledWith('/');
     });
   });
 });

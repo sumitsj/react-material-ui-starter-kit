@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Container from '@material-ui/core/Container';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
-import { Link as RouterLink } from 'react-router-dom';
+import { Link as RouterLink, useHistory } from 'react-router-dom';
 import Link from '@material-ui/core/Link';
 import { Visibility, VisibilityOff } from '@material-ui/icons';
 import IconButton from '@material-ui/core/IconButton';
@@ -15,12 +15,15 @@ import Logo from '../../assets/images/logo.png';
 
 const Login = () => {
   const classes = useStyles();
+  const history = useHistory();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
 
   const handleSubmitClick = (event) => {
+    event.preventDefault();
     localStorage.setItem('auth-token', 'true');
+    history.push('/');
   };
 
   return (

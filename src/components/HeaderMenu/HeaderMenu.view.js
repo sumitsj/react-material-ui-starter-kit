@@ -1,12 +1,14 @@
+import React from 'react';
+import { useHistory } from 'react-router-dom';
 import IconButton from '@material-ui/core/IconButton';
 import { AccountCircle } from '@material-ui/icons';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import React from 'react';
 import useStyles from './HeaderMenu.style';
 
 const HeaderMenu = () => {
   const classes = useStyles();
+  const history = useHistory();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
 
@@ -20,6 +22,7 @@ const HeaderMenu = () => {
 
   const handleLogout = () => {
     localStorage.removeItem('auth-token');
+    history.push('/login');
   };
 
   return (

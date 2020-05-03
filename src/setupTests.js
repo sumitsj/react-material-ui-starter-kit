@@ -14,3 +14,11 @@ const localStorageMock = {
 Object.defineProperty(window, 'localStorage', {
   value: localStorageMock,
 });
+
+Object.defineProperty(window, 'history', {
+  value: {
+    go: jest.fn(),
+    pushState: jest.fn(),
+    replaceState: jest.fn(),
+  },
+});

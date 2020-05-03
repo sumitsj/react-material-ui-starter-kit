@@ -17,6 +17,12 @@ describe('Header Menu', () => {
       expect(localStorage.removeItem).toHaveBeenCalledWith('auth-token');
     });
 
+    it('should redirect to login page on log out click', () => {
+      const { getByText } = render(<HeaderMenu />);
+      fireEvent.click(getByText(/Log Out/i));
+      expect(window.history.pushState).toHaveBeenCalledWith('/login');
+    });
+
     it('should open user profile menu on menu button click', () => {
       const { getByLabelText, getByTestId } = render(<HeaderMenu />);
       expect(getByTestId('user-profile-menu')).not.toBeVisible();

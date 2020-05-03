@@ -7,6 +7,10 @@ Redirect.propTypes = {
   to: PropTypes.string.isRequired,
 };
 
+export const useHistory = () => ({
+  push: window.history.pushState,
+});
+
 export {
   HashRouter, Route, Link, Switch,
 } from 'react-router-dom';
