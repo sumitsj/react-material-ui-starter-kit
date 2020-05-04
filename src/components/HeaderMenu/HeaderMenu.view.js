@@ -4,7 +4,7 @@ import IconButton from '@material-ui/core/IconButton';
 import { AccountCircle } from '@material-ui/icons';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import useStyles from './HeaderMenu.style';
+import useStyles from './HeaderMenu.styles';
 
 const HeaderMenu = () => {
   const classes = useStyles();

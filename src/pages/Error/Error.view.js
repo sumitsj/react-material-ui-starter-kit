@@ -5,7 +5,7 @@ import Container from '@material-ui/core/Container';
 import ErrorOutlineOutlinedIcon from '@material-ui/icons/ErrorOutlineOutlined';
 import { ERROR_MESSAGES, ERROR_TYPES } from '../../constants';
 import Header from '../../components/Header';
-import useStyles from './Error.style';
+import useStyles from './Error.styles';
 
 const Error = ({ type }) => {
   const classes = useStyles();

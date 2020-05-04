@@ -3,7 +3,7 @@ import AppBar from '@material-ui/core/AppBar/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Link from '@material-ui/core/Link';
 import * as PropTypes from 'prop-types';
-import useStyles from './Header.style';
+import useStyles from './Header.styles';
 import logo from '../../assets/images/logo.png';
 import HeaderMenu from '../HeaderMenu';
 
